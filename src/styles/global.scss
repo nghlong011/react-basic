@@ -1,0 +1,51 @@
+@import "style";
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.control-dots {
+  display: none !important;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: $text-color;
+  background-color: #fff;
+  line-height: 2;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+
+body > * {
+  position: relative;
+  z-index: 9999;
+}
+a {
+  text-decoration: none;
+  color: $text-color;
+  transition: all 0.5s ease-in-out;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 3px;
+  color: $dark-color;
+  margin-top: 0;
+  transition: all 0.5s ease-in-out;
+}
+.text-center {
+  text-align: center;
+}
+.active {
+  color: $primary-color !important;
+}
