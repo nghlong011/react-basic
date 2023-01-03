@@ -1,6 +1,5 @@
 @import "style";
 
-// @import '../assets/images/logo-1.png';
 .preview__header {
   font-size       : 12px;
   height          : 54px;
@@ -53,7 +52,12 @@
       text-align      : center;
       text-decoration : none;
       cursor          : pointer;
+
+      &:hover {
+        background-color: #7aa93c;
+      }
     }
+
   }
 
   @media screen and (max-width: 568px) {
@@ -81,7 +85,6 @@
   box-shadow      : 0 3px 5px #ad00ff4d;
   transition      : all 0.5s ease-in-out;
   position        : fixed;
-  // top: 0;
   right           : 0;
   left            : 0;
   top             : 54px;
@@ -98,7 +101,7 @@
       margin    : auto 0;
 
       img {
-        max-height: 50px;
+        max-height: 54px;
       }
     }
 
@@ -138,8 +141,6 @@
             line-height   : 1;
             letter-spacing: 1px;
             white-space   : nowrap;
-            padding-left  : 0 !important;
-            padding-right : 0 !important;
             text-transform: uppercase;
             transition    : all 0.5s ease-in-out;
           }
@@ -149,8 +150,6 @@
 
     @media screen and (max-width: 1200px) {
       .main_nav {
-        // display: none;
-        // flex: 100%;
         background-color: $header-background;
         border-top      : 1px solid #0000001a;
         border-bottom   : 1px solid #0000001a;
@@ -196,10 +195,8 @@
 }
 
 .home {
-  background-image: url("../assets/images/slider1.jpg");
-  position        : relative;
-
-  height           : 600px;
+  position         : relative;
+  height           : 85vh;
   padding-top      : 150px;
   display          : flex;
   justify-content  : center;
